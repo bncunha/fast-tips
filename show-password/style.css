@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  background-color: #eeeeee;
+  font-family: 'Roboto';
+}
+
+input:focus, textarea:focus, select:focus, button:focus{
+  outline: none;
+}
+
+.container {
+  max-width: 300px;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  padding: 1em 1em;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  transition: all 0.6s ease;
+}
+
+.input:focus {
+  border-color: #d0c3de;
+}
+
+.pass-label {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.input-content {
+  position: relative;
+}
+
+.btn-toggle-view {
+  position: absolute;
+  top: 0.9em;
+  border: none;
+  right: 1em;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-icon {
+  font-size: 1.2em;
+  color: #b8a1bd;
+}
+
+.hidden {
+  display: none;
+}
