@@ -2,12 +2,12 @@ import React from 'react';
 import PS5Logo from '../../assets/PS5_logo.png';
 import { DateTime, Container, Logo, TitleContainer, DualsenseBackground } from './styled';
 import moment from 'moment';
+import UserCard from '../../components/UserCard/UserCard';
 
 export default function SelectPlayer() {
 
   return (
     <Container className="container-fluid">
-      <DualsenseBackground/>
       <div className="row">
         <div className="col-lg-6">
           <Logo src={PS5Logo} alt="Playstation Logo"/>
@@ -23,6 +23,13 @@ export default function SelectPlayer() {
           <h1 className="font-weight-bold"> Who is using the controller? </h1>
         </div>
       </TitleContainer>
+
+      <div>
+        <UserCard>
+
+        </UserCard>
+
+      </div>
     </Container>
   )
 }
