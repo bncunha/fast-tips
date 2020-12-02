@@ -25,7 +25,7 @@ export const DateTime = styled.span`
 `;
 
 export const TitleContainer = styled.div`
-  margin-top: 50px;
+  margin-top: 30px;
 `;
 
 export const DualsenseBackground = styled.div`
@@ -42,4 +42,16 @@ export const DualsenseBackground = styled.div`
   opacity: 0.5;
   pointer-events: none;
   user-select: none;
+`;
+
+export const UsersList = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+`;
+
+export const UserItem = styled.div`
+  flex-basis: 280px;
+  max-width: 280px;
+  height: 100%;
 `;

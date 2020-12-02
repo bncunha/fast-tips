@@ -1,8 +1,10 @@
 import React from 'react';
 import PS5Logo from '../../assets/PS5_logo.png';
-import { DateTime, Container, Logo, TitleContainer, DualsenseBackground } from './styled';
+import { DateTime, Container, Logo, TitleContainer, UsersList, UserItem } from './styled';
 import moment from 'moment';
 import UserCard from '../../components/UserCard/UserCard';
+import BlueUser from '../../assets/Blueuser.png';
+import Skulluser from '../../assets/Skulluser.png';
 
 export default function SelectPlayer() {
 
@@ -24,12 +26,20 @@ export default function SelectPlayer() {
         </div>
       </TitleContainer>
 
-      <div>
-        <UserCard>
-
-        </UserCard>
-
-      </div>
+      <UsersList>
+        <UserItem>
+          <UserCard type="new"/>
+        </UserItem>
+        <UserItem>
+          <UserCard username="Jo-Accord" image={Skulluser} isPlus={true} mainColor="#feda3f"/>
+        </UserItem>
+        <UserItem>
+          <UserCard username="evebanigo" image={BlueUser} mainColor="#00aed1"/>
+        </UserItem>
+        <UserItem>
+          <UserCard type="guest"/>
+        </UserItem>
+      </UsersList>
     </Container>
   )
 }
